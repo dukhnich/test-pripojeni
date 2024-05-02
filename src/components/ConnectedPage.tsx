@@ -1,7 +1,6 @@
-import React from 'react';
-import Offline from '../Offline';
+import Offline from './Offline';
 
-const ConnectedPage = () => {
+export const ConnectedPage: React.FC = () => {
   return (
     <div className="container">
       <h1>Test připojení</h1>

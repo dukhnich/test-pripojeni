@@ -1,17 +1,13 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import ConnectedPage from './components/ConnectedPage';
-import './style.css';
 
-const App = () => {
+export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <nav className="container">
         <Link to="/">Domů</Link>
-        &nbsp;
-        &nbsp;
+        &nbsp;|&nbsp;
         <Link to="/test">Test připojení</Link>
       </nav>
 
@@ -23,6 +19,5 @@ const App = () => {
   );
 };
 
-createRoot(
-  document.querySelector('#app'),
-).render(<App />);
+export default App;
+

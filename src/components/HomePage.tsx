@@ -1,6 +1,4 @@
-import React from 'react';
-
-const HomePage = () => {
+export const HomePage: React.FC = () => {
   return (
     <div className="container">
       <h1>Hlavní stránka</h1>
