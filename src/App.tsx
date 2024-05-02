@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import HomePage from './components/HomePage';
 import ConnectedPage from './components/ConnectedPage';
 
